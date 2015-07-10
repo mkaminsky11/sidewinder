@@ -1,0 +1,23 @@
+{
+	"main": "index.html",
+	"name": "sidewinder",
+	"description": "a code editor over ssh",
+	"version": "0.1.0",
+	"keywords": [ "demo", "node-webkit" ],
+  	"window": {
+    	"title": "sidewinder",
+    	"icon": "link.png",
+    	"toolbar": false,
+    	"frame": true,
+    	"width": 800,
+    	"height": 500,
+    	"position": "center",
+    	"min_width": 400,
+    	"min_height": 200,
+    	"max_width": 800,
+		"max_height": 600
+  	},
+  	"webkit": {
+    	"plugin": true
+	}
+}
