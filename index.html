@@ -1,8 +1,30 @@
-<!DOCTYPE html>
-	<head>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="codemirror/lib/codemirror.css">
+	<link rel="stylesheet" href="material-icons/css/material-design-iconic-font.min.css">
+</head>
+<body>
+	<div id="login">
+		<div>
+			<p id="login_error" style="display:none">An error occured</p>
 
-	</head>
-	<body>
+			<input type="text" placeholder="username" id="login_username" value="">
+			<input type="text" placeholder="host" id="login_host" value="">
+			<input type="password" placeholder="password" id="login_password" value="">
+			<input type="text" placeholder="port(22)" id="login_port" value="">
 
-	</body>
-</html>
+			<button id="login_button" onclick="connect()">CONNECT</button>
+		</div>
+	</div>
+
+	<div id="editor" style="display:none">
+		<div id="path"></div>
+		<div id="main">
+			<div id="sidebar"></div>
+			<div id="code"></div>
+		</div>
+	</div>
+
+	<script src="codemirror/lib/codemirror.js"></script>
+	<script src="js/main.js"></script>
+</body>

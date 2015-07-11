@@ -1,0 +1,138 @@
+body{
+	margin: 0;
+	font-family: "arial";
+
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+	overflow: hidden;
+}
+
+.CodeMirror {
+	height: 100% !important;
+	width: 100% !important;
+}
+
+#login{
+
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+	align-items: center;
+	justify-content: center;
+}
+
+#login > div{
+	position: relative;
+	max-width: 80%;
+	max-height: 80%;
+	background-color: white;
+	border-radius: 5px;
+	padding: 30px;
+	box-shadow: 0 0 9px rgba(74, 74, 74, 0.15);
+	-webkit-box-shadow: 0 0 9px rgba(74, 74, 74, 0.15);
+	-moz-box-shadow: 0 0 9px rgba(74, 74, 74, 0.15);
+}
+
+#login input{
+	width: calc(100% - 20px);
+  	padding: 10px;
+  	margin-bottom: 7px;
+  	border-radius: 5px;
+  	border: none;
+  	border: solid 1px #eee;
+  	font-size: 13px;
+}
+
+#login_button{
+	background-color: #009688;
+  	border: none;
+  	padding: 8px;
+  	border-radius: 3px;
+  	margin-top: 5px;
+  	font-size: 11px;
+  	color: white;
+  	font-weight: bold;
+}
+
+#login_error{
+  	position: absolute;
+  	top: 0px;
+  	color: white;
+  	background-color: rgb(202, 43, 43);
+  	font-size: 10px;
+  	padding: 3px;
+  	border-radius: 3px;
+}
+
+#editor{
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+	overflow: hidden;
+}
+
+#code{
+	width: calc(100% - 200px);
+	height: 100%;
+}
+
+#sidebar{
+	width: 200px;
+	height: 100%;
+	background-color: rgb(203, 203, 203);
+}
+
+#path{
+	flex: 1;
+	height: auto;
+	width: 100%;
+	background-color: white;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    border-bottom: solid thin rgb(161, 161, 161);
+}
+
+#main{
+	position: relative;
+	flex: 1;
+  	height: auto;
+}
+
+#path > div{
+	font-size: 13px;
+	padding: 6px;
+}
+
+#path i{
+	font-size: 16px;
+	color: #D0D0D0;
+}
