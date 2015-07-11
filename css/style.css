@@ -96,12 +96,29 @@ body{
 #code{
 	width: calc(100% - 200px);
 	height: 100%;
+	float: right;
 }
 
 #sidebar{
 	width: 200px;
-	height: 100%;
 	background-color: rgb(203, 203, 203);
+	float: left;
+	height: calc(100% - 10px);
+	overflow-x: scroll;
+}
+
+#sidebar ul{
+	list-style-type: none;
+	-webkit-padding-start: 10px !important;
+}
+
+#sidebar li{
+	color: #F0EFEF;
+	font-weight: 600;
+	font-size: 13px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	overflow-wrap: break-word;
 }
 
 #path{
@@ -119,6 +136,8 @@ body{
     -ms-flex-direction: row;
     flex-direction: row;
     border-bottom: solid thin rgb(161, 161, 161);
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 #main{
